@@ -11,6 +11,7 @@ import { sendMailWelcome } from 'src/assets/swc/modules/mail';
 export class FormComponent {
   numericValue: string = '';
   email: string = '';
+  name: string = '';
 
   onInputChange(event: any) {
     var inputValue = event.target.value;

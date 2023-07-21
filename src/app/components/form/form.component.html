@@ -1,54 +1,49 @@
-        <section>
-          <form (ngSubmit)="validateAndSubmit()">
-            <div class="row gtr-uniform">
-              <div class="col-12 col-12-xsmall">
-                <input
-                  type="text"
-                  name="demo-name"
-                  id="demo-name"
-                  [(ngModel)]="email"
-                  placeholder="Escribe tu Nombre"
-                />
-              </div>
-              <div class="col-6 col-12-xsmall">
-                <input
-                  type="email"
-                  name="demo-email"
-                  id="demo-email"
-                  [(ngModel)]="email"
-                  placeholder="Ingresa tu Correo"
-                />
-              </div>
-              <div class="col-6 col-12-xsmall">
-                <input
-                  type="text"
-                  name="demo-nro"
-                  id="demo-nro"
-                  [(ngModel)]="numericValue"
-                  (input)="onInputChange($event)"
-                  placeholder="Ingresa tu Número de Celular"
-                  maxlength="10"
-                  inputmode="numeric"
-                />
-              </div>
-              <div class="col-12">
-                <textarea
-                  name="demo-message"
-                  id="demo-message"
-                  placeholder="Dejanos un mensaje"
-                  rows="6"
-                ></textarea>
-              </div>
-              <div class="col-12">
-                <button
-                  type="submit"
-                  class="primary"
-                  id="send-button"
-                  (click)="validateAndSubmit()"
-                >
-                  Envianos un Correo
-                </button>
-              </div>
-            </div>
-          </form>
-        </section>
+
+<section>
+  <form (ngSubmit)="validateAndSubmit()">
+    <div class="row gtr-uniform">
+      <div class="col-12 col-12-xsmall">
+        <input
+          type="text"
+          name="demo-name"
+          id="demo-name"
+          [(ngModel)]="name"
+          placeholder="Escribe tu Nombre"
+          />
+      </div>
+      <div class="col-6 col-12-xsmall">
+        <input
+          type="email"
+          name="demo-email"
+          id="demo-email"
+          [(ngModel)]="email"
+          placeholder="Ingresa tu Correo"
+          />
+      </div>
+      <div class="col-6 col-12-xsmall">
+        <input
+          type="text"
+          name="demo-nro"
+          id="demo-nro"
+          [(ngModel)]="numericValue"
+          (input)="onInputChange($event)"
+          placeholder="Ingresa tu Número de Celular"
+          maxlength="10"
+          inputmode="numeric"
+          />
+      </div>
+      <div class="col-12">
+        <textarea
+          name="demo-message"
+          id="demo-message"
+          placeholder="Dejanos un mensaje"
+          rows="6"></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="primary" id="send-button" (ngSubmit)="validateAndSubmit()">
+          Envianos un Correo
+        </button>
+      </div>
+    </div>
+  </form>
+</section>

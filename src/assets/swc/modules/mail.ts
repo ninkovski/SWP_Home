@@ -18,7 +18,7 @@ export function sendMailWelcome() {
     Subject: emailWelcome.Subject,
     Body: emailWelcome.Body,
   };
-
+  console.log(emailData);
   Email.send(emailData).then(function (message) {
     if (message === 'OK') {
       alert(confirmMessage.mail);
